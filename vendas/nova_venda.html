@@ -41,11 +41,16 @@
     <input type="text" value="" readonly>
 
     <label>Nome</label>
-    <input type="text" value="">
+    <input id="nomeCliente" type="text" value="">
 
     <div class="troca-nome">
-        <input type="checkbox">
+        <input id="chkTrocaNome" type="checkbox">
         <span>Troca de nome?</span>
+    </div>
+
+    <div id="campoNomeNF" style="display: none;">
+        <label>Nome NF</label>
+        <input id="nomeNF" type="text">
     </div>
 </div>
 
@@ -110,6 +115,6 @@
 
     </div>
 </div>
-
+<script src="../assets/js/pagamento.js" defer></script>
 </body>
 </html>
