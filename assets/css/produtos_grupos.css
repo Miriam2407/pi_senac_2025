@@ -1,0 +1,240 @@
+/* ===========================
+    ESTILO GERAL DA PÁGINA
+=========================== */
+
+body {
+  background: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container geral */
+.container {
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===========================
+        BOTÕES DO TOPO
+=========================== */
+
+.botoes-topo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 30px;
+}
+
+.botoes-topo a.voltar {
+  font-size: 22px;
+  text-decoration: none;
+  color: #333;
+}
+
+.btn-verde {
+  padding: 10px 15px;
+  background: #7ac4a8;
+  color: black;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-verde:hover {
+  background: #43a047;
+}
+
+/* ===========================
+    ÁREA DE CADASTRO DA ESQUERDA
+=========================== */
+
+#cadastro-produto {
+  width: 380px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+#cadastro-produto h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Grupos de input */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.field-row {
+  display: flex;
+  gap: 15px;
+}
+
+.half-width {
+  width: 100%;
+}
+
+/* Botões */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn.reset {
+  background: #d9534f;
+  color: white;
+}
+
+.btn.reset:hover {
+  background: #c9302c;
+}
+
+.btn.cadastrar {
+  background: #4caf50;
+  color: white;
+}
+
+.btn.cadastrar:hover {
+  background: #43a047;
+}
+
+/* ===========================
+       TABELA À DIREITA
+=========================== */
+
+.tabela {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.tabela table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela th {
+  background: #4caf50;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.tabela td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabela tr:hover td {
+  background: #f1f1f1;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+/* ===========================
+        DROPDOWN DE FILTRO
+=========================== */
+
+.filtro-pesquisa {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filtro-btn {
+  padding: 10px;
+  background: #c7f0e3;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-conteudo {
+  display: none;
+  position: absolute;
+  background: white;
+  top: 45px;
+  left: 0;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-conteudo {
+  display: block;
+}
+
+.dropdown-conteudo label {
+  display: block;
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+.filtro-pesquisa input[type="text"] {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+/* ===========================
+          RESPONSIVO
+=========================== */
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  #cadastro-produto {
+    width: 100%;
+  }
+
+  .tabela {
+    width: 100%;
+  }
+}
