@@ -1,37 +1,79 @@
-# 🧠 Projeto Faculdade - Backend
+# # 2º entrega do Projeto Integrador Grupo 26 
 
-Backend desenvolvido em **Node.js + Express + Sequelize + MySQL**.  
-Responsável por lidar com autenticação, conexão ao banco e comunicação com o frontend.
-
+Este projeto tem por objetivo atender as demandas do quarto semestre da disciplina de Projeto Integrador: Desenvolvimento de sistemas orientado a Dispositivos Móveis e Baseados na Web 
 ---
 
-## ⚙️ Tecnologias utilizadas
 
-- [Node.js](https://nodejs.org/)
-- [Express](https://expressjs.com/)
-- [Sequelize (ORM)](https://sequelize.org/)
-- [MySQL](https://www.mysql.com/)
-- [dotenv](https://www.npmjs.com/package/dotenv)
-- [cookie-parser](https://www.npmjs.com/package/cookie-parser)
-- [jose](https://www.npmjs.com/package/jose) (para JWT)
+## Integrantes do grupo e suas equipes:
+### Projeto de Banco de Dados
+- DANIEL DE OLIVEIRA SOLANO LOPES
+
+### Projeto de Back End
+- EDUARDO AUGUSTO DA SILVA ROSA
+- HENRIQUE BARREIRO SANTANA
+- VINICIUS PEREIRA DE SOUZA 
+
+### Projeto de Front End
+- ICARO GOES MOREIRA
+- MARCELLY CERDEIRINHA MARCIOTO
+- MIRIAM VIEGAS DE JESUS
+
+### Integração dos projetos
+- HENRIQUE BARREIRO SANTANA
+- VINICIUS PEREIRA DE SOUZA
+- MIRIAM VIEGAS DE JESUS
+
+## Apresentação do projeto
+
+- O projeto consiste em um sistema integrado para atender um sistema de gestão voltado a pet shops de pequeno porte, com o objetivo de centralizar informações, otimizar processos internos e fortalecer o relacionamento com clientes por meio de ferramentas de comunicação automatizadas.
+- Este projeto inicialmente consistiu em um sistema que contemplará funcionalidades de cadastro de clientes, fornecedores, funcionários e pets, além de módulos para controle de estoque, compras, vendas e agendamentos de serviços, integrados a lembretes automáticos via WhatsApp. O sistema busca reduzir erros manuais, aumentar a eficiência operacional e fornecer relatórios gerenciais que apoiem a tomada de decisões estratégicas. 
+  
+### Revisita ao projeto
+- Dadas as limitações de tempo para a realização do projeto, o desenvolvimento da parte de integração entre os sistema desenvolvido e o serviço de comunicação WhatsApp foi removida, de maneira que o projeto não possui os sistemas de comunicação ou de agendamento de serviços que inicialmente foram levantados.
+
+---
+## ⚙️ Tecnologias utilizadas
+### Back End
+- Node.js + Express, para criação do ambiente de execução e framework web para criação da API.
+- TypeScript, foi a Linguagem principal para código.
+
+### Banco de Dados
+- PostgreSQL, foi utilizado para o Banco de dados relacional.
+
+### Front End
+- Foram utilizadas HTML, CSS e JavaScrip.
 
 ---
 
 ## 📦 Estrutura do projeto
 
-```
-src/
-├── config/
-│ └── database.js # Conexão com o banco via Sequelize
+new-repositorio/
+├── assests/
+│ └── css # Contem os arquivos CSS do projeto
+│ └── img # Contem as imagens utilizadas no projeto
+│ └── js # Contem os arquivos javaScrit do projeto 
 │
-├── controllers/ # Lógica das rotas
-├── models/ # Modelos das tabelas
-├── routes/ # Rotas da API
-│ └── index.js
+├── back-end/
+│ └── css # Contem os arquivos CSS do projeto 
+│ └── css # Contem os arquivos CSS do projeto 
 │
-├── app.js # Configuração do Express
-└── server.js # Inicialização do servidor
-```
+├── .cadastro_cliente/ 
+│ └── HTML da Página de Clientes 
+│ └── HTML Página de de cadastro de clientes  
+│
+├── produtos
+│ └──  HTML da página de Produtos
+│ └──  HTML da página de Cadastro de produtos para alimentar a tabela de produtos.
+│ └──  HTML da página de edição de produtos cadastrados.
+│ └──  HTML da página de edição da categoria de grupos,  para alimentar a tabela de produtos.
+│ └──  HTML da página de edição da categoria de setores,  para alimentar a tabela de produtos.
+│ 
+│
+├── header.htmk # Arquivo principal do menu utilizado pelas paginas
+│
+├── index.html# Página principal do projeto 
+│
+└── telainicial.html # Página de apresentação do projeto
 
 ---
 
