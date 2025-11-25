@@ -45,7 +45,7 @@ Este projeto tem por objetivo atender as demandas do quarto semestre da discipli
 ---
 
 ## 📦 Estrutura do projeto
-
+```
 new-repositorio/
 ├── assests/
 │ └── css # Contem os arquivos CSS do projeto
@@ -74,7 +74,7 @@ new-repositorio/
 ├── index.html# Página principal do projeto 
 │
 └── telainicial.html # Página de apresentação do projeto
-
+```
 ---
 
 ## 🧩 Pré-requisitos
